@@ -1,19 +1,21 @@
-const userNumber = +prompt(' write number');
+const userNumber = prompt(' write number');
 
-// if (userNumber <= 999) {
-//     if (isNaN(+userNumber)) {
-//         alert('Введите число');
-//     } else {
-        
-//     }
-// } else {
-//     alert('Введите трехзначное число')
-// }
-
-if (userNumber % 2) {
-    alert("odinakoviy")
-    console.log(userNumber);
+if(userNumber < 1000) {
+    if(isNaN(userNumber)) {
+        alert('Введіть число')
+    } else if (userNumber === null || userNumber === '' || userNumber === ' ') {
+        alert('Введіть число')
+    } else if (userNumber.length <= 2) {
+        alert('Введіть число від 2')
+    } else {
+        if(userNumber[0] === userNumber[1] && userNumber[1] === userNumber[2]) {
+            alert('Усі цифри однакові')
+        } else if (userNumber[0] === userNumber[1] || userNumber[0] === userNumber[2] || userNumber[1] === userNumber[2]) {
+            alert("Дві цифри однакові")
+        } 
+    }
+} else if (userNumber >= 1000) {
+    alert('Введіть число менше 1000')
 } else {
-    alert("Нету одинаковых")
-    console.log(userNumber);
+    alert('Введіть число')
 }
