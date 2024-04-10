@@ -10,7 +10,11 @@ if(userNumber < 1000) {
     } else {
         if(userNumber[0] === userNumber[1] && userNumber[1] === userNumber[2]) {
             alert('Усі цифри однакові')
-        } else if (userNumber[0] === userNumber[1] || userNumber[0] === userNumber[2] || userNumber[1] === userNumber[2]) {
+        } else if (
+            userNumber[0] === userNumber[1] ||
+            userNumber[0] === userNumber[2] ||
+            userNumber[1] === userNumber[2]
+        ) {
             alert("Дві цифри однакові")
         } 
     }

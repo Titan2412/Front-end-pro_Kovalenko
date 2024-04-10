@@ -3,13 +3,13 @@ const userCity = prompt('where do you live');
 const userSport = prompt('Your favorite sport');
 
 if (userAge || userCity || userSport === null || '') {
-    if (userAge === null || '') {
+    if (!userAge) {
         alert("Шкода, що Ви не захотіли ввести свій(ю) вік")
         alert(`Місто: ${userCity}, спорт: ${userSport}`)
-    } else if (userCity === null || '') {
+    } else if (!userCity) {
         alert("Шкода, що Ви не захотіли ввести свій(ю) Місто")
         alert(`Вік: ${userAge} спорт: ${userSport}`)
-    } else if (userSport === null || '') {
+    } else if (!userSport) {
         alert("Шкода, що Ви не захотіли ввести свій(ю) спорт")
         alert(`Вік: ${userAge} Місто: ${userCity}`)
     } else {
