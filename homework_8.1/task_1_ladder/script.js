@@ -1,15 +1,15 @@
-let count = 0;
 let ladder = {
+    count: 0,
     up: function () { // підніматиме вас на одну сходинку
-        count++;
+        this.count++;
         return this
     },
     down: function () { // опускатиме вас на одну сходинку
-        count--;
+        this.count--;
         return this
     },
     showStep: function () { // показує поточну сходинку
-        console.log(count)
+        console.log(this.count)
         return
     }
 };
