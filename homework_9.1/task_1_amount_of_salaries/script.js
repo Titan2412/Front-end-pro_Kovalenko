@@ -1,8 +1,8 @@
 const conmpany = {
     sales: [
-        { name: 'Jhon', salery: 1000 }, 
-        { name: 'Alice', salery: 600 },
-        { name: 'Bob', salery: 1200 }
+        { name: 'Jhon', salary: 1000 }, 
+        { name: 'Alice', salary: 600 },
+        { name: 'Bob', salary: 1200 }
     ],
     development: {
         web: [
@@ -14,19 +14,19 @@ const conmpany = {
             { name: 'Jack', salary: 1300 } 
         ]
     }
-}
+};
 
-function totalSales(company) {
-    if(typeof company === 'object') {
-        for(let key in company) {
-            for(let ket in key) {
-                console.log(ket)
-            }
+function totalSales(conmpany) {
+    let sum = 0;
+
+    for (let key in conmpany) {
+        if (Array.isArray(conmpany[key])) {
+            sum += conmpany[key].reduce((acc, curr) => acc + curr.salary, 0);
+        } else if (typeof conmpany[key] === 'object') {
+            sum += totalSales(conmpany[key]);
         }
     }
-    if(Array.isArray(company)) {
-
-    }
+    return sum;
 }
 
 const total = totalSales(conmpany);
