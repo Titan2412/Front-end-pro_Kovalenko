@@ -4,7 +4,6 @@ const btn2 = document.querySelector("[data-action-btn2]")
 const btn3 = document.querySelector("[data-action-btn3]")
 
 menu.addEventListener('click', function(e) {
-    console.log('menu', e.target)
     if(e.target === btn1) {
        alert("Ви натиснули: Кнопка 1")
     } else if(e.target === btn2) {
