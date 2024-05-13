@@ -1,0 +1,93 @@
+@import url(./fonts/fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-form {
+    padding-top: 150px;
+}
+
+.form {
+    background:#EDEDF7;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.title {
+    background: linear-gradient(118.16deg, rgb(240, 20, 90),rgb(239, 128, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    font-family: Montserrat;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 17px;
+    color: #B3B3BA;
+    font-family: Montserrat;
+}
+
+input, textarea {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    border: none;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder {
+    color: #B3B3BA;
+    font-family: Montserrat;
+}
+
+textarea::placeholder {
+    color: #B3B3BA;
+    font-family: Montserrat;
+}
+
+.btn-submit {
+    background-color: #24A3FF;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 12px;
+    font-family: Montserrat;
+}
+#nameError, #messageError, #phoneError, #emailError {
+    display: none;
+    color: red;
+}

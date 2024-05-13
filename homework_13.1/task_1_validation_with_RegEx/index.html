@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation with RegEx</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="section-form">
+        <div class="wrapper">
+            <div class="form">
+                <form name="action">
+                    <fieldset>
+                        <legend class="title">We would like to help you</legend>
+                        <input type="text" name="userName" id="userName" placeholder="Name" tabindex="1">
+                        <p id="nameError">Введіть коректне ім'я(Ім'я може містити лише літери!)</p>
+                        <textarea name="userMessage" id="userMessage" placeholder="Message"></textarea>
+                        <p id="messageError">Ваше повідомлення має бути не менше ніж 5 символів!</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="sub-title">How to answer you?</legend>
+                        <input type="tel" name="userPhone" id="userPhone" placeholder="Phone number" tabindex="2" >
+                        <p id="phoneError">Введіть номер телефону (Телефон повинен починатися з +380, та складатися з 9 цифр)</p>
+                        <input type="text" name="userEmail" id="userEmail" placeholder="Email" tabindex="3" >
+                        <p id="emailError">Введіть коректно Email (Email повинен містити @ та .)</p>
+                    </fieldset>
+                    <button type="submit" class="btn-submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
