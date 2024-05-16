@@ -1,5 +1,4 @@
 const btnSubmit = document.getElementById("btn-submit");
-const input = document.querySelector('input')
 const userName = document.getElementById("userName");
 const userMessage = document.getElementById("userMessage");
 const userPhone = document.getElementById("userPhone");
