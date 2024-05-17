@@ -1,9 +1,24 @@
 const item = document.querySelectorAll('.container');
-const btnDots = document.querySelectorAll('.btn-dots');
+const dotsWrap = document.querySelector('.slider')
 const itemLenght = item.length;
 let  count = 0;
+let i = 0;
+
+while (i < itemLenght) {
+    let btn = document.createElement('button');
+    btn.classList.add('btn-dots');
+    dotsWrap.appendChild(btn)
+
+    if (i === itemLenght) {
+      break;
+    }
+    i = i + 1;
+  }
+  const first = dotsWrap.firstElementChild
+  first.classList.add('active')    
 
 function slide(index) {
+    const btnDots = document.querySelectorAll('.btn-dots');
     item.forEach((e, i) => {
         if(index === i) {
             item[i].classList.add('active');
