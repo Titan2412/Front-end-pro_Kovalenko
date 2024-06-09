@@ -4,6 +4,7 @@ const imagemin = require('gulp-imagemin')
 const htmlmin = require('gulp-minify-html')
 const newer = require('gulp-newer');
 const browserSync = require('browser-sync').create();
+const babel = require("gulp-babel")
 
 function clean() {
     return del(["dist/*", '!dist/images'])
@@ -27,6 +28,14 @@ function html() {
     .pipe(browserSync.stream())
 }
 
+function script() {
+    return gulp.src("src/js/script.js")
+    .pipe(babel({
+      presets: ["@babel/preset-env"]
+    }))
+    .pipe(gulp.dest("dist"));
+}
+
 function watch() {
     browserSync.init({
         server: {
@@ -36,7 +45,7 @@ function watch() {
     gulp.watch('src/*.html', browserSync.reload)
 }
 
-const build = gulp.series(clean, html, image, watch)
+const build = gulp.series(clean, gulp.parallel(html,script, image), watch)
 
 exports.clean = clean
 exports.watch = watch
