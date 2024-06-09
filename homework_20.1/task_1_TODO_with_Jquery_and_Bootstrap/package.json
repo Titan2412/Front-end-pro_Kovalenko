@@ -1,0 +1,20 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "main": "./src/js.script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "author": "titan241",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-newer": "^1.4.0"
+  }
+}
