@@ -3,7 +3,7 @@ const timer = document.querySelector('.user-timers');
 
 function startTime(duration) {
     let time = duration;
-    let paused = false;
+    let stoped = false;
 
     const timerWrap = document.createElement('div');
     timer.appendChild(timerWrap);
@@ -13,10 +13,10 @@ function startTime(duration) {
     timerWrap.appendChild(timers);
     timers.classList.add('timer');
 
-    const pause = document.createElement('button');
-    timerWrap.appendChild(pause)
-    pause.textContent = "Пауза"
-    pause.classList.add('pause');
+    const stop = document.createElement('button');
+    timerWrap.appendChild(stop)
+    stop.textContent = "Пауза"
+    stop.classList.add('stop');
 
     let timerInterval = setInterval(() => {
         timers.textContent = timeFormat(time);
@@ -27,10 +27,10 @@ function startTime(duration) {
         }
     }, 1000);
 
-    pause.addEventListener('click', () => {
-        if(!paused) {
+    stop.addEventListener('click', () => {
+        if(!stoped) {
             clearInterval(timerInterval);
-            paused = false;
+            stoped = false;
         }
     })
 }
