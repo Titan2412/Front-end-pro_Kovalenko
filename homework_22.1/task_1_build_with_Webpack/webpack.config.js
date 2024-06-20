@@ -59,8 +59,7 @@ module.exports = {
             use: {
               loader: 'babel-loader',
               options: {
-                presets: ["@babel/preset-env"],
-                plugins: ["@babel/plugin-transform-runtime"],
+                configFile: path.resolve(__dirname, 'babel.config.json')
               }
             }
           },
