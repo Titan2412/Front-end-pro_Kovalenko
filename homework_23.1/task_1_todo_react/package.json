@@ -1,0 +1,27 @@
+{
+  "name": "task_1_todo_react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js",
+    "starts": "webpack serve --node-env=production"
+  },
+  "type": "module",
+  "author": "titan241",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.4.5",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
