@@ -1,0 +1,11 @@
+.taskList {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.amountItem {
+    font-size: 20px;
+    color: white;
+}
