@@ -1,0 +1,47 @@
+{
+  "destination": [],
+  "hotels": [
+    {
+      "id": "d31ec654a807fcab1443bfbb",
+      "name": "Kuvalis - Skiles",
+      "city": "West Maxcester",
+      "phone_number": "971-835-1020",
+      "photo": "https://picsum.photos/seed/bVE2S8yx82/140/140"
+    },
+    {
+      "id": "59ae2df344b4410b6ccc623a",
+      "name": "Rutherford, White and Schneider",
+      "city": "South Hunter",
+      "phone_number": "860-768-8137 x71501",
+      "photo": "https://picsum.photos/seed/3x42YGk7Bo/140/140"
+    },
+    {
+      "id": "bfad18f1e15da82cc17ba0b5",
+      "name": "Ferry Group",
+      "city": "Francesborough",
+      "phone_number": "(709) 518-4639 x775",
+      "photo": "https://picsum.photos/seed/QBMgVtj/140/140"
+    },
+    {
+      "id": "45fdf2fd305650e67154df9a",
+      "name": "Gibson - Bartell",
+      "city": "Medaland",
+      "phone_number": "(463) 469-8668 x246",
+      "photo": "https://picsum.photos/seed/x65Gyi4u/140/140"
+    },
+    {
+      "id": "0885e956d5edee1d2f306d78",
+      "name": "Bradtke LLC",
+      "city": "New Alejandraboro",
+      "phone_number": "(291) 658-8158 x0670",
+      "photo": "https://picsum.photos/seed/OEbDIt4/140/140"
+    },
+    {
+      "id": "caa0f6a34f6ecf9ae2b7e609",
+      "name": "Murray Group",
+      "city": "Horaciobury",
+      "phone_number": "(373) 734-1302 x7110",
+      "photo": "https://picsum.photos/seed/hnWoRSbn8C/140/140"
+    }
+  ]
+}
